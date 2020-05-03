@@ -1,0 +1,17 @@
+---
+title: "R Markdown Presentation & Plotly"
+output: html_document
+date: 04/05/2020
+author: "Nayan Mali"
+---
+
+## R Markdown
+
+```{r cars}
+library(plotly)
+plain_x <- c(1:50)
+plain_y <- rnorm(50, mean = 0)
+data <- data.frame(plain_x, plain_y )
+p <- plot_ly(data, x = ~plain_x, y = ~plain_y , type = 'bar')
+p
+```
